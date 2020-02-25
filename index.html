@@ -7,7 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head><?php  $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+	</head>
+	<?php  $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
                                     if (strpos($agent, 'tencenttraveler') === false){
                                      echo " 非微信浏览";
                                    } else {
