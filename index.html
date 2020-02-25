@@ -7,7 +7,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+	</head><?php  $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+                                    if (strpos($agent, 'tencenttraveler') === false){
+                                     echo " 非微信浏览";
+                                   } else {
+                                     echo "是，查看原网页";
+                                    }  ?>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
